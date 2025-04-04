@@ -26,7 +26,7 @@ for i in range(1, N):
     x_next = x_values[-1] + dt * exponential_growth(x_values[-1], r)
     x_values.append(x_next)
 
-# Convert to tensor for plotting
+# Convert from tensor to NumPy for plotting
 x_values = torch.stack(x_values).detach().numpy()
 
 # Plot results
